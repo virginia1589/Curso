@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
-import NavBar from './components/NavBar';
+import NavBar from './components/NavBar/NavBar';
+import Home from './containers/Home/Home';
 
 function App() {
   return (
     <div >
-      <NavBar></NavBar>
+      <NavBar/>
+      <Home greeting="Bienvenidos a Virgilandia"/>
     </div>
   );
 }

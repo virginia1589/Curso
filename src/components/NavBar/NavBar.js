@@ -1,4 +1,5 @@
 import React from "react";
+import Icart from "../Icons/CartIcon";
 
 function NavBar() {
   return (
@@ -21,6 +22,8 @@ function NavBar() {
           <li>
             <a>Contact</a>
           </li>
+
+          <Icart />
         </ul>
       </nav>
     </div>
