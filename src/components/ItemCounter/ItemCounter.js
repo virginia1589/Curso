@@ -2,22 +2,22 @@ import React, { useState } from "react";
 import "./ItemCounter.css";
 
 export default function ItemCounter() {
-  const [counter, setCounter] = useState(0);
+  let [value, setValue] = useState(0);
   const handleClickAdd = () => {
-    setCounter(++counter);
+    setValue(++value);
   };
   const handleClickSub = () => {
-    if (counter > 0) setCounter(--counter);
+    if (value > 0) setValue(--value);
   };
 
   const handleReset = () => {
-    setCounter(0);
+    setValue(0);
   };
   return (
     <div className="Container">
       <div className="wrapper">
         <button onClick={handleClickSub}>-</button>
-        <div>{counter}</div>
+        <div>{value}</div>
         <button onClick={handleClickAdd}>+</button>
       </div>
       <button className="reset" onClick={handleReset}>
@@ -26,3 +26,4 @@ export default function ItemCounter() {
     </div>
   );
 }
+
