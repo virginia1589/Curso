@@ -1,0 +1,30 @@
+.Container {
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    width: 50%;
+    margin: auto;
+    background-color: white;
+    border: 1px solid gray;
+    font-size: 50px;
+  }
+  button{
+        background-color: white;
+        border: none;
+        width: 50px;
+        height: 30px;
+        cursor: pointer;
+        border: 2px solid gray;
+    }
+
+    .reset{
+        margin-top: 20px;
+        width: 100px;
+        height: 40px;
+    }
